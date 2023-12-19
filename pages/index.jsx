@@ -16,7 +16,7 @@ const index = () => {
   const { data, isFetching, isError, error } = useQuery({
     queryKey: ["user"],
     queryFn: fethData,
-    staleTime: 1000 * 120,
+    refetchOnWindowFocus: false,
   });
   const handlesubmit = () => {
     // if you use one queryKey then no need to write queryKey name into refetchQueries
