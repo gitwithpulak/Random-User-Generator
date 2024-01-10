@@ -29,7 +29,7 @@ const Nav = ({ fth, func }) => {
         </NavbarBrand>
 
         <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex">
+          <NavbarItem className="flex">
             <Switch
               isSelected={mode}
               size="lg"
